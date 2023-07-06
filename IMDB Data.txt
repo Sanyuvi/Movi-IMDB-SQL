@@ -1,0 +1,49 @@
+create table Media(
+Movie_name text,
+Image text);
+
+insert into media values ("John Wick","https://www.themoviedb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"), 
+                         ("Extraction","https://www.pinkvilla.com/images/2023-06/1649626176_.jpg");
+
+
+
+create table Movie_Genre(
+Movie_name text,
+Genre_type text,
+sensor_type text  
+);
+
+insert into Movie_Genre values ("Doctor","Comedy","U"), ("Thuppaki","Action","U/A"),
+("Ratchasan","Thriller","A");
+
+
+create table Reviews(
+Movie_name text,
+Reviewers text,
+Comments text,  
+Ratings Integer  
+);
+
+insert into Reviews values ("Doctor","The Hindu","An Enjoyable Comedy Caper", 9.4), ("Thuppaki","Behindwoods","Action Packed Thriller", 9.7),
+("Ratchasan","moviebuff","An Efficient Suspense-laden Thriller", 9.8);
+
+
+create table Artist(
+  Name text,
+  Gender text,
+  Nationality text,
+  Skills text);
+  
+  insert into Artist values("Thamarai", "Female","Indian","Writer"),
+  ("Prabhudeva", "Male", "Indian", "Dancer"),
+  ("A.R.Rahmann", "Male", "Indian", "Music composer");
+
+
+  create table Movie_Role(
+  Name text,
+  Movie_name text,
+  Characters text);
+  
+  
+  insert into Movie_Role  values("Ajith Kumar", "Billa","Hero & Villian"),
+  (" Siddharth Malhotra", "Mission Majnu", "Soldier & Spy");
